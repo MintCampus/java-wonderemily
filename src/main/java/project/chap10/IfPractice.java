@@ -50,7 +50,7 @@ public class IfPractice {
 		}
 	}
 	
-	private static boolean isPrime(int n) {
+	public static boolean isPrime(int n) {
 		for (int i = 2; i < n; i++) {
   			if (n % i == 0) return false;
 		}
@@ -62,5 +62,30 @@ public class IfPractice {
 			if (isPrime(i)) System.out.println(i + ": 소수");
 			else System.out.println(i + ": 합성수");
 		}
+	}
+	
+	public static void ex10_3(int n) {
+		if (n % 6 == 2) System.out.println("나머지가 2입니다.");
+		else if (n % 6 == 4) System.out.println("나머지가 4입니다.");
+		else System.out.println("예상 밖입니다.");
+	}
+	
+	public static void ex10_3_2(int n) {
+		if (n >= 1 && n <= 9) {
+			System.out.println("한 자리 수입니다.");
+		}
+		else if (n >= 10 && n <= 99) {
+			System.out.println("두 자리 수입니다.");
+		}
+		else if (n >= 100 && n <= 999) {
+			System.out.println("세 자리 수입니다.");
+		}
+		else if (n >= 1000 && n <= 9999) {
+			System.out.println("네 자리 수입니다.");
+		}
+		else {
+			System.out.println("예상 밖입니다.");
+		}
+		
 	}
 }
