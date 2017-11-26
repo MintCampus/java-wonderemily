@@ -6,7 +6,12 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		testBreakPractice();
+		SwitchPractice.yesOrNo();
+	}
+	
+	private static void testContinuePractice() {
+		System.out.println(ContinuePractice.sumExceptMultiples());
+		ContinuePractice.printExceptLastDigitEight();
 	}
 	
 	private static void testBreakPractice() {
@@ -16,7 +21,7 @@ public class Main {
 		// BreakPractice.getPrimeInput();
 		BreakPractice.sumAll();
 	}
-	
+
 	private static void testTernaryPractice() {
 		TernaryPractice.printMax(1, 10);   // expect 10
 		TernaryPractice.printMax(32, -32);  // expect 32
