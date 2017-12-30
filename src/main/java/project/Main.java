@@ -2,11 +2,17 @@ package project;
 
 import project.chap9.*;
 import project.chap10.*;
+import project.chap12.*;
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		SwitchPractice.yesOrNo();
+		System.out.print("Sum(100) = ");
+		System.out.println(Recursive.sum(100));
+		System.out.print("Fibonacci(30) = ");
+		System.out.println(Recursive.fibonacci(30));
+		System.out.print("Factorize(582,598,102): ");
+		Recursive.factorize(582598102);
 	}
 	
 	private static void testContinuePractice() {
